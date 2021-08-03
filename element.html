@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--element.html 組成元素頁面-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linelife</title>
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+
+  <!-- Bootstrap -->
+  <link href="bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+  <!--html5up-landed的main.css-->
+  <!-- <link href="header.css" rel="stylesheet"> -->
+  <!--animate.css-master的動畫的animate.css-->
+  <link href="animate.css" rel="stylesheet">
+  <!--html5up-story的main.css-->
+  <link href="main2.css" rel="stylesheet">
+  <script>
+    $('.carousel').carousel();
+  </script>
+
+  <!-- Return to Top -->
+  <!-- 用於回到最上面 -->
+
+  <style>
+
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 50px;
+      right: 30px;
+      /* z-index: 99; */
+      /* font-size: 14px; */
+      border: none;
+      outline: none;
+      background-color: #2c61ad;
+      opacity: 0.8;
+      color: #ffffff;
+      cursor: pointer;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 15px;
+      padding-right:15px;
+      border-radius: 50px;
+
+      letter-spacing: 0.125em;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-size: 0.95rem;
+      max-width: 20rem;
+      text-overflow: ellipsis;
+
+    }
+
+#myBtn:hover {
+  background-color: #0f0f0f;
+  opacity: 0.75;
+
+}
+  </style>
+
+</head>
+
+
+<body>
+  <!--nav-bar -->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="">
+    <div class="container-fluid"> <a class="navbar-brand" href="index.html">
+        <img class="img-fluid d-block" src="logo/logo1-01.png" width="150" height="150">
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar10">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar10" style="font-size: 11pt;">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item" style="" id="nav-item">
+            <a class="nav-link" href="index.html">
+              <img src="icon/icon1-8.png" alt="home" /><br>Home首頁
+              <span class="sr-only">(current)</span></a>
+          </li> -->
+          <li class="nav-item" id="nav-item" style="">
+            <a class="nav-link" href="about.html">
+              <img src="icon/icon2-100.jpg" alt="about" style="padding-left: 8px;" /><br>關於我們</a>
+          </li>
+          <li class="nav-item" style="" id="nav-item">
+            <a class="nav-link" href="element.html">
+              <img src="icon/icon1-100.jpg" alt="element" style="padding-left: 8px;" /><br>組成元素</a>
+          </li>
+          <li class="nav-item" id="nav-item">
+            <a class="nav-link" href="product.html">
+              <img src="icon/icon4-100.jpg" alt="product" style="padding-left: 8px;" /><br>燈飾圖鑑</a>
+          </li>
+          <li class="nav-item" id="nav-item">
+            <a class="nav-link" href="new.html">
+              <img src="icon/icon3-100.jpg" alt="new" style="padding-left: 8px;" /><br>相關資訊</a>
+          </li>
+          <li class="nav-item" style="" id="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/LoveLineLife/" target="_blank" title="一線生蹟FB">
+              <img src="icon/icon6-100.jpg" alt="contact" style="padding-left: 8px;" /><br>粉絲專頁</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Introduction Row -->
+    <br>
+    <h3 class="animated fadeInDown" style="text-align: center;">構築出一線生蹟的三大元素</h3>
+
+    <br>
+
+    <!--------------------->
+    <div class="row">
+      <div class="col-lg-2 col-md-2" id="myScrollspy">
+        <style>
+          /*list-group 滑過去的顏色調淡*/
+          .list-group-item-action:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: #2c61ad;
+            /*透明度*/
+            opacity: 0.80;
+          }
+
+          .list-group-item-action:focus {
+            color: #495057;
+            text-decoration: none;
+            background-color: #2c61ad;
+          }
+
+          .list-group-item-action:active {
+            color: #212529;
+            background-color: #2c61ad;
+          }
+
+          .list-group-item {
+            position: relative;
+            display: block;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            /*去除treebrak頁面中邊框*/
+            /* border: 1px solid rgba(0, 0, 0, 0.125); */
+            /*在treebrak頁面中加上左邊邊框*/
+            border-left: 1px solid rgba(0, 0, 0, 0.125);
+
+          }
+
+          .list-group-item.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #2c61ad;
+            border-color: #2c61ad;
+          }
+        </style>
+        <div class="list-group " id="myList" role="tablist" style="position: relative;">
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#monument" role="tab">古蹟</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#treebark" role="tab">樹皮</a>
+          <a class="list-group-item list-group-item-action" data-toggle="list" href="#embroidery" role="tab">刺繡</a>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-10 col-md-10">
+        <div class="tab-content">
+          <div class="tab-pane active" id="monument" role="tab">
+            <h2>古蹟</h2>
+            <div class="row">
+              <h3 class="animated fadeInUp" style="animation-duration:3s; animation-delay:0.5s;">
+                <i><strong>「每個細節都是數百年來生活的累蹟」</strong></i></h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-5">
+                <h4>【建築裝飾在古時生活的意義】</h4>
+                <p>
+                  傳統建築大量運用裝飾來豐富層次，裝飾也賦予了建築一種別具意義的美感，寄託著古時人們心中的願望與理想，具備著辟邪與祈福的象徵，承載著古時的生活、信仰、藝術、思想等。
+                </p>
+                <h4>【美意背後的寓意與祝福】</h4>
+                <p>
+                  建築裝飾有著豐富的創意聯想與吉祥寓意，而其中元素包含了人們對於民間故事、或藉由事物象徵的意義來引用延伸為其他美好的聯想，藉此圖樣成為百姓寄託心願和情感的媒介。
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-5">
+                <img class="img-fluid d-block" src="img/slide01.jpg" alt="" style="border-radius:15px;">
+              </div>
+            </div>
+            <br>
+
+            <h4>【裝飾的技法】</h4>
+            <p>
+              在不同的建築形式上，裝飾技法也分為許多種。有雕刻、鑲嵌、彩繪、塑造、彩瓷、組砌等，透過這些傳統民俗工藝手法來表現，使得裝飾圖樣在傳達寓意上各自達到不同的效果 。
+            </p>
+          </div>
+          <div class="tab-pane active" id="treebark" role="tab">
+            <h2>樹皮</h2>
+            <h3 class="animated fadeInUp" style="animation-duration:3s; animation-delay:0.5s;"><strong>
+                <i>「觸碰生活最原始的溫度」</i>
+              </strong></h3>
+            <div class="row">
+              <div class="col-lg-4 col-md-3">
+                <img class="img-fluid d-block" src="img/element/002.jpg" alt="" style="border-radius:15px;">
+                <br>
+              </div>
+              <div class="col-lg-8 col-md-7">
+                <h4>【取自自然，用至生活】</h4>
+                <p>
+                  構樹皮從古至今在生活上的應用相當廣泛，比如製作成衣服、皮包、燈籠，甚至帳篷等。但紡織技術的興起，樹皮文化也急劇消失。因此我們希望透過樹皮來連結最自然、原始的溫暖，重新和日常生活。
+                </p>
+              </div>
+              <br>
+              <div class="col-lg-6 col-md-5">
+                <h4>【樹皮的特性】</h4>
+                <p>構樹在不同地區的水土情況下，會有不同的韌性與透光性。而製作過程必須經過：樹幹浸泡→樹皮剝取→敲打→曬乾。且過程中必須反覆沖洗，將樹皮的汁液洗淨，樹皮最後就能呈現出布料般柔軟樸質的手感。</p>
+              </div>
+              <div class="col-lg-6 col-md-5">
+                <img class="img-fluid d-block" src="img/element/002.gif" alt="" style="border-radius:15px;">
+              </div>
+
+              <br>
+            </div>
+            <br>
+          </div>
+
+          <div class="tab-pane active" id="embroidery" role="tab">
+            <h2>刺繡</h2>
+            <h3 class="animated fadeInUp" style="animation-duration:3s; animation-delay:0.5s;"><i><strong>「一針一線繡出生活軌跡」</i></strong></h3>
+            <div class="row">
+              <div class="col-lg-4 col-md-3">
+                <img class="img-fluid d-block" src="img/element/12.jpg" alt="" style="border-radius:15px;">
+              </div>
+              <div class="col-lg-8 col-md-7">
+                <h4>【繡針引線】</h4>
+                <p>刺繡是民間傳統手工藝之一，也是古代女子必修的一項女紅。而刺繡的起源是從人們對於自身的美感需求開始的，為了讓衣服上的花紋顏色能長久地保留在上面，人們便開始用針於布上刺繡，就這樣開始了刺繡的文化。刺繡簡單來講就是以繡針引線，在繡布上穿繞，結合不同顏色的線，在布上表現出不同的花紋，體現它的美感。
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-3">
+                <img class="img-fluid d-block" src="img/element/13.jpg" alt="" style="border-radius:15px;">
+              </div>
+              <div class="col-lg-8 col-md-7">
+                <h4>【與生活的連結】</h4>
+                <p>而刺繡的文化經歷了漫長的時間，最開始是以實用為目的，用於服飾與日用小件的裝飾。久而久之也將吉祥物題材、繪畫、書法融入到了刺繡中，發展成極具美感的手藝，是文化與歷史的代表與縮影，同時也呈現著過去古代人生活的軌跡。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- 用於回到最上面 -->
+  <li class="text-white" onclick="topFunction()" id="myBtn" title="Go to top">⊼</li>
+  <!-- <button onclick="topFunction()" id="return-to-top" title="Go to top">∧</button> -->
+
+  <script>
+    //用於listgroup
+    $(function() {
+      $('#myList a:last-child').tab('show')
+    })
+    $('#myList a').on('click', function(e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  </script>
+
+
+  <section>
+    <hr>
+  </section>
+
+  <footer class="text-center text-dark">
+    <!--textcolor為黑色-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © MyWebsite. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+  <!--加了縮小的nav-bar部會閃退&投影片輪播才會動-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.0.0.js"></script>
+  <!--加了縮小的nav-bar部會閃退&投影片輪播才會動-->
+
+  <script src="story-js/jquery.min.js"></script>
+  <script src="story-js/jquery.scrolly.min.js"></script>
+  <script src="story-js/jquery.scrollex.min.js"></script>
+  <script src="story-js/browser.min.js"></script>
+  <script src="story-js/breakpoints.min.js"></script>
+  <script src="story-js/util.js"></script>
+  <script src="story-js/main.js"></script>
+  <!-- html5up-land 的Scripts -->
+
+  <!---->
+  <!--輪播淡出淡入的script-->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!--輪播淡出淡入的script-->
+
+  <script>
+    // 用於回到最上面
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
