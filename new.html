@@ -7,28 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Linelife</title>
-  <!-- Bootstrap -->
-  <link href="bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
-  <!--html5up-landed的main.css-->
-  <link href="header.css" rel="stylesheet">
-  <!--animate.css-master的動畫的animate.css-->
-  <link href="animate.css" rel="stylesheet">
-  <!--html5up-story的main.css-->
-  <link href="main2.css" rel="stylesheet">
-
   <script>
-    $('.carousel').carousel();
+    // 動態載入 head.html
+    fetch("component/head.html")
+      .then(response => response.text())
+      .then(html => {
+        document.head.insertAdjacentHTML("beforeend", html);
+      }).catch(error => console.error("載入 head.html 失敗:", error));
   </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-201770684-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-201770684-2');
-</script>
 
 </head>
 
@@ -36,17 +22,18 @@
 <body>
   <!--nav-bar -->
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" >
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid"> <a class="navbar-brand" href="index.html">
         <img class="img-fluid d-block" src="logo/logo1-01.png" width="150" height="150">
-      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar10">
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+        data-target="#navbar10">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbar10" style="font-size: 11pt;">
         <ul class="navbar-nav ml-auto">
 
-          <li class="nav-item" id="nav-item" >
+          <li class="nav-item" id="nav-item">
             <a class="nav-link" href="about.html">
               <img src="icon/icon2-100.jpg" alt="about" class="pl-2" /><br>關於我們</a>
           </li>
@@ -90,7 +77,8 @@
       <h2 class="animated fadeInDown" style="animation-duration: 5s;animation-iteration-count:3">Behance 作品</h2>
       <ul class="actions">
         <li>
-          <a href="https://www.behance.net/gallery/78467893/Line-LifeVisual-Communication" target="_blank" title="一線生蹟behance" />
+          <a href="https://www.behance.net/gallery/78467893/Line-LifeVisual-Communication" target="_blank"
+            title="一線生蹟behance" />
           <img src="img/behance-logo.gif" style="width:100px">
           </a>
         </li>
