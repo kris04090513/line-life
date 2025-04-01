@@ -1,164 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--product.html 圖鑑燈飾頁面-->
+  <!--product.html 圖鑑燈飾頁面-->
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Linelife</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linelife</title>
 
-  <!-- Bootstrap -->
-  <link href="bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
-  <!--html5up-landed的main.css-->
-  <link href="header.css" rel="stylesheet">
-  <!--animate.css-master的動畫的animate.css-->
-  <link href="animate.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+    <!--html5up-landed的main.css-->
+    <link href="header.css" rel="stylesheet">
+    <!--animate.css-master的動畫的animate.css-->
+    <link href="animate.css" rel="stylesheet">
+      <!--html5up-story的main.css-->
+  <link href="main2.css" rel="stylesheet">
 
-  <script>
+    <script>
     $('.carousel').carousel();
   </script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-201770684-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-201770684-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-201770684-2');
-</script>
+    gtag('config', 'UA-201770684-2');
+  </script>
 
-</head>
+  </head>
 
+  <body>
+    <!--nav-bar -->
 
-<body>
-  <!--nav-bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid"> <a class="navbar-brand" href="index.html">
+          <img class="img-fluid d-block" src="logo/logo1-01.png" width="150"
+            height="150">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right border-0"
+          type="button" data-toggle="collapse"
+          data-target="#navbar10">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="">
-    <div class="container-fluid"> <a class="navbar-brand" href="index.html">
-        <img class="img-fluid d-block" src="logo/logo1-01.png" width="150" height="150">
-      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar10">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="navbar10"
+          style="font-size: 11pt;">
+          <ul class="navbar-nav ml-auto">
 
-      <div class="collapse navbar-collapse" id="navbar10" style="font-size: 11pt;">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item" style="" id="nav-item">
-            <a class="nav-link" href="index.html">
-              <img src="icon/icon1-8.png" alt="home" /><br>Home首頁
-              <span class="sr-only">(current)</span></a>
-          </li> -->
-          <li class="nav-item" id="nav-item" style="">
-            <a class="nav-link" href="about.html">
-              <img src="icon/icon2-100.jpg" alt="about" style="padding-left: 8px;" /><br>關於我們</a>
-          </li>
-          <li class="nav-item" style="" id="nav-item">
-            <a class="nav-link" href="element.html">
-              <img src="icon/icon1-100.jpg" alt="element" style="padding-left: 8px;" /><br>組成元素</a>
-          </li>
-          <li class="nav-item" id="nav-item">
-            <a class="nav-link" href="product.html">
-              <img src="icon/icon4-100.jpg" alt="product" style="padding-left: 8px;" /><br>燈飾圖鑑</a>
-          </li>
-          <li class="nav-item" id="nav-item">
-            <a class="nav-link" href="new.html">
-              <img src="icon/icon3-100.jpg" alt="new" style="padding-left: 8px;" /><br>相關資訊</a>
-          </li>
-          <li class="nav-item" style="" id="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/LoveLineLife/" target="_blank" title="一線生蹟FB">
-              <img src="icon/icon6-100.jpg" alt="contact" style="padding-left: 8px;" /><br>粉絲專頁</a>
-          </li>
-        </ul>
+            <li class="nav-item" id="nav-item" style>
+              <a class="nav-link" href="about.html">
+                <img src="icon/icon2-100.jpg" alt="about"
+                 class="pl-2"  /><br>關於我們</a>
+            </li>
+            <li class="nav-item" style id="nav-item">
+              <a class="nav-link" href="element.html">
+                <img src="icon/icon1-100.jpg" alt="element"
+                class="pl-2" /><br>組成元素</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-link" href="product.html">
+                <img src="icon/icon4-100.jpg" alt="product"
+                class="pl-2" /><br>燈飾圖鑑</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a class="nav-link" href="new.html">
+                <img src="icon/icon3-100.jpg" alt="new"
+                class="pl-2" /><br>相關資訊</a>
+            </li>
+            <li class="nav-item" style id="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/LoveLineLife/"
+                target="_blank" title="一線生蹟FB">
+                <img src="icon/icon6-100.jpg" alt="contact"
+                class="pl-2" /><br>粉絲專頁</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-
-  <section>
-    <div class="container">
-      <br>
-      <header>
+    <section>
+      <div class="container">
         <br>
-        <h3 class="animated fadeInDown" style="text-align: center;">一探究竟一線生蹟的設計秘密，揭開古蹟裝飾、繡線、構樹間的關係</h3>
-        <br>
-        <p></p>
-      </header>
+        <header>
+          <br>
+          <h3 class="animated fadeInDown"
+            style="text-align: center;">一探究竟一線生蹟的設計秘密，揭開古蹟裝飾、繡線、構樹間的關係</h3>
+          <br>
+          <p></p>
+        </header>
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section>
-    <div class="container">
+    <section>
+      <div class="container">
 
-      <div class="row">
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="6category.html"><img class="card-img-top" src="img/pro-book.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title text-dark">
-                <a href="6category.html">圖鑑</a>
-              </h4>
-              <p class="card-text">發現台灣古蹟文化
-                各種富含寓意的裝飾以及祝福的花紋</p>
+        <div class="row">
+          <div class="col-lg-6 portfolio-item">
+            <div class="card h-100">
+              <a href="6category.html"><img class="card-img-top"
+                  src="img/pro-book.jpg" alt></a>
+              <div class="card-body">
+                <h4 class="card-title text-dark">
+                  <a href="6category.html">圖鑑</a>
+                </h4>
+                <p class="card-text">發現台灣古蹟文化
+                  各種富含寓意的裝飾以及祝福的花紋</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 portfolio-item">
+            <div class="card h-100">
+              <a href="treebark.html"><img class="card-img-top"
+                  src="img/pro-tree-1.jpg" alt></a>
+              <div class="card-body">
+                <h4 class="card-title text-dark">
+                  <a href="treebark.html">刺繡型染燈設計</a>
+                </h4>
+                <p class="card-text">點亮古蹟裝飾重生的希望</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 portfolio-item">
-          <div class="card h-100">
-            <a href="treebark.html"><img class="card-img-top" src="img/pro-tree-1.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title text-dark">
-                <a href="treebark.html">刺繡型染燈設計</a>
-              </h4>
-              <p class="card-text">點亮古蹟裝飾重生的希望</p>
+
+      </section>
+
+      <section>
+        <hr>
+      </section>
+
+      <!--頁尾-->
+      <footer class="text-center text-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p>Copyright © MyWebsite. All rights reserved.</p>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
+      <!--加了縮小的nav-bar部會閃退&投影片輪播才會動-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap-4.0.0.js"></script>
+      <!--加了縮小的nav-bar部會閃退&投影片輪播才會動-->
 
-  </section>
+      <!-- html5up-land 的Scripts -->
+      <!-- <script src="js/jquery.min.js"></script> -->
+      <script src="js/jquery.scrolly.min.js"></script>
+      <script src="js/jquery.dropotron.min.js"></script>
+      <script src="js/jquery.scrollex.min.js"></script>
+      <script src="js/browser.min.js"></script>
+      <script src="js/breakpoints.min.js"></script>
+      <script src="js/util.js"></script>
+      <script src="js/main.js"></script>
+      <!-- html5up-land 的Scripts -->
 
-  <section>
-    <hr>
-  </section>
+      <!---->
+      <!--輪播淡出淡入的script-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+      <!--輪播淡出淡入的script-->
+    </body>
 
-  <!--頁尾-->
-  <footer class="text-center text-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p>Copyright © MyWebsite. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--加了縮小的nav-bar部會閃退&投影片輪播才會動-->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-4.0.0.js"></script>
-  <!--加了縮小的nav-bar部會閃退&投影片輪播才會動-->
-
-  <!-- html5up-land 的Scripts -->
-  <!-- <script src="js/jquery.min.js"></script> -->
-  <script src="js/jquery.scrolly.min.js"></script>
-  <script src="js/jquery.dropotron.min.js"></script>
-  <script src="js/jquery.scrollex.min.js"></script>
-  <script src="js/browser.min.js"></script>
-  <script src="js/breakpoints.min.js"></script>
-  <script src="js/util.js"></script>
-  <script src="js/main.js"></script>
-  <!-- html5up-land 的Scripts -->
-
-  <!---->
-  <!--輪播淡出淡入的script-->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <!--輪播淡出淡入的script-->
-</body>
-
-</html>
+  </html>
